@@ -1,0 +1,11 @@
+aws-ssm:
+    container_name: aws-ssm
+    restart: unless-stopped
+    image: aws-ssm/core:latest
+    ports:
+      - "8943:443/tcp" # Always ensure the WUI port is first in the ports list.
+    env_file:
+      - ./services/aws-ssm.env
+    volumes:
+       - ./volumes/aws-ssm/:/opt/aws-ssm/
+
