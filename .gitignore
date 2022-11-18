@@ -17,7 +17,7 @@ post_restore.sh
 .new_install
 
 !.gitkeep
-
+!.template/
 .vscode
 *.code-workspace
 
