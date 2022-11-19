@@ -1,4 +1,4 @@
-containerNameGoesHere:
+signalk:
     container_name: signalk
     restart: unless-stopped
     image: signalk/core:latest
