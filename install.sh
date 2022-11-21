@@ -264,12 +264,12 @@ echo "Enter in the sudo password when prompted, to install dependencies"
 
 sudo apt-get install git -y
 git clone https://github.com/leftbrainstuff/edge-off-grid-data-aq-stack.git
-cd IOTstack
+cd edge-off-grid-data-aq-stack 
 
 if [ $? -eq 0 ]; then
-  echo "IOTstack cloned"
+  echo "edge-off-grid-data-aq-stack  cloned"
 else
-  echo "Could not find IOTstack directory"
+  echo "Could not find edge-off-grid-data-aq-stack  directory"
 	exit 5
 fi
 
