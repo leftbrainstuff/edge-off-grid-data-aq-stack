@@ -19,7 +19,7 @@ do
     shift
 done
 
-echo "IOTstack Installation"
+echo "edge-off-grid-data-aq-stack Installation"
 if [ "$EUID" -eq "0" ]; then
   echo "Please do not run as root"
   exit
@@ -221,7 +221,7 @@ function do_docker_checks() {
       install_docker
     else
       if [ ! -f .docker_notinstalled ]; then
-        if (whiptail --title "Docker and Docker-Compose" --yesno "Docker is not currently installed, and is required to run IOTstack. Would you like to install docker and docker-compose now?\nYou will not be prompted again." 20 78); then
+        if (whiptail --title "Docker and Docker-Compose" --yesno "Docker is not currently installed, and is required to run edge-off-grid-data-aq-stack . Would you like to install docker and docker-compose now?\nYou will not be prompted again." 20 78); then
             [ -f .docker_notinstalled ] && rm .docker_notinstalled
             do_env_setup
             install_docker
@@ -263,7 +263,7 @@ touch .new_install
 echo "Enter in the sudo password when prompted, to install dependencies"
 
 sudo apt-get install git -y
-git clone https://github.com/SensorsIot/IOTstack.git
+git clone https://github.com/leftbrainstuff/edge-off-grid-data-aq-stack.git
 cd IOTstack
 
 if [ $? -eq 0 ]; then
