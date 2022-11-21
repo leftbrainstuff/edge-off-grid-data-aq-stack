@@ -8,4 +8,5 @@
 wget http://prdownloads.sourceforge.net/webadmin/webmin_2.000_all.deb
 
 # Install
-sudo dpkg -i webmin_2.000_all.deb
+## Run as sudo
+dpkg -i webmin_2.000_all.deb
