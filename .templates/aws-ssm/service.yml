@@ -1,7 +1,7 @@
 aws-ssm:
     container_name: aws-ssm
     restart: unless-stopped
-    image: leftbrainstuff/aws-ssm
+    image: leftbrainstuff/aws-ssm:arm64
     ports:
       - "8943:443/tcp" # Always ensure the WUI port is first in the ports list.
     volumes:
