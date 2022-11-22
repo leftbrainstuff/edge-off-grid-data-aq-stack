@@ -3,8 +3,7 @@ signalk:
     restart: unless-stopped
     image: kgustafs/signalk-server:latest
     ports:
-      - "8375:8375" # Always ensure the WUI port is first in the ports list.
-      - "52500:52500"
+      - "8375:8375"
     volumes:
        - ./volumes/signalk/:/opt/signalk/
 
