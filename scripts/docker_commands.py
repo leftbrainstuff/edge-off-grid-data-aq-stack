@@ -30,8 +30,8 @@ def main():
 
   def startStack():
     print("Start Stack:")
-    print("docker-compose up -d --remove-orphans")
-    subprocess.call("docker-compose up -d", shell=True)
+    print("docker compose up -d --remove-orphans")
+    subprocess.call("docker compose up -d", shell=True)
     print("")
     print("Stack Started")
     input("Process terminated. Press [Enter] to show menu and continue.")
@@ -41,14 +41,14 @@ def main():
   def restartStack():
     print("Restarting Stack...")
     print("Stop Stack:")
-    print("docker-compose down")
-    subprocess.call("docker-compose down", shell=True)
+    print("docker compose down")
+    subprocess.call("docker compose down", shell=True)
     print("")
     print("Start Stack:")
-    print("docker-compose up -d --remove-orphans")
-    subprocess.call("docker-compose up -d", shell=True)
-    # print("docker-compose restart")
-    # subprocess.call("docker-compose restart", shell=True)
+    print("docker compose up -d --remove-orphans")
+    subprocess.call("docker compose up -d", shell=True)
+    # print("docker compose restart")
+    # subprocess.call("docker compose restart", shell=True)
     print("")
     print("Stack Restarted")
     input("Process terminated. Press [Enter] to show menu and continue.")
@@ -57,8 +57,8 @@ def main():
 
   def stopStack():
     print("Stop Stack:")
-    print("docker-compose down")
-    subprocess.call("docker-compose down", shell=True)
+    print("docker compose down")
+    subprocess.call("docker compose down", shell=True)
     print("")
     print("Stack Stopped")
     input("Process terminated. Press [Enter] to show menu and continue.")
