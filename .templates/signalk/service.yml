@@ -1,14 +1,3 @@
-signalk:
-    container_name: signalk
-    restart: unless-stopped
-    image: kgustafs/signalk-server:latest
-    ports:
-      - "8375:8375"
-    environment:
-      - PORT=3030
-    volumes:
-       - ./volumes/signalk/:/opt/signalk/
-
 version: "2.2"
 services:
   signalk-server:
