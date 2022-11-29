@@ -1,0 +1,7 @@
+# Contains custom overrides
+services:
+  signalk:
+    ports:
+      - "8375:8375"
+      - "52500:52500"
+      - "3000:3001"
