@@ -1,5 +1,4 @@
-
-signalk:
+opencpn:
     container_name: opencpn
     restart: unless-stopped
     image: opencpn/ubuntu-bionic-armhf:latest
