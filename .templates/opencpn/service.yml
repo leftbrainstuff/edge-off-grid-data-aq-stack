@@ -1,0 +1,10 @@
+
+signalk:
+    container_name: opencpn
+    restart: unless-stopped
+    image: opencpn/ubuntu-bionic-armhf:latest
+    ports:
+      - "10110:10110"
+      - "9009:9009"
+    volumes:
+       - ./volumes/opencpn/:/opt/opencpn/
