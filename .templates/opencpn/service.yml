@@ -7,3 +7,4 @@ opencpn:
       - "9009:9009"
     volumes:
        - ./volumes/opencpn/:/opt/opencpn/
+    network_mode: bridge
