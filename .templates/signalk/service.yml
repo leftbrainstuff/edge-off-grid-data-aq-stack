@@ -7,7 +7,7 @@ signalk:
       - "8375:8375"
       - "52500:52500"
     environment:
-      - PORT: "3030"
+      - PORT=3030
     volumes:
        - ./volumes/signalk/:/opt/signalk/
     networks:
