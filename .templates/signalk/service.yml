@@ -10,7 +10,7 @@ signalk:
       - PORT=3030
     volumes:
        - ./volumes/signalk/:/opt/signalk/
-    networks:
-       default:
-         name: edge-off-grid-data-aq-stack_default
-         external: true
+networks:
+    default:
+    name: edge-off-grid-data-aq-stack_default
+    external: true
