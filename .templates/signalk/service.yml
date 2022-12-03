@@ -3,10 +3,14 @@ signalk:
     restart: unless-stopped
     image: kgustafs/signalk-server:latest
     ports:
+      - "3030:3300"
       - "8375:8375"
       - "52500:52500"
     environment:
       - PORT: "3030"
     volumes:
        - ./volumes/signalk/:/opt/signalk/
-    network_mode: default
+    networks:
+       default:
+         name: edge-off-grid-data-aq-stack_default
+         external: true
