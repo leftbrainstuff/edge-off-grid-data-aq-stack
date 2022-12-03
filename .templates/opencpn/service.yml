@@ -7,4 +7,7 @@ opencpn:
       - "9009:9009"
     volumes:
        - ./volumes/opencpn/:/opt/opencpn/
-    network_mode: bridge
+networks:
+    default:
+    name: edge-off-grid-data-aq-stack_default
+    external: true
