@@ -4,5 +4,9 @@ signalk:
     image: kgustafs/signalk-server:latest
     ports:
       - "8375:8375"
+      - "52500:52500"
+    environment:
+      - PORT="3030"
     volumes:
        - ./volumes/signalk/:/opt/signalk/
+    network_mode: bridge
