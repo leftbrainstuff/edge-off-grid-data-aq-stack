@@ -3,7 +3,7 @@ signalk:
     restart: unless-stopped
     image: kgustafs/signalk-server:latest
     ports:
-      - "3030:3300"
+      - "3030:3030"
       - "8375:8375"
       - "52500:52500"
     environment:
