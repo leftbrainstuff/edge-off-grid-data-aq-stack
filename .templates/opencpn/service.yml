@@ -1,7 +1,7 @@
 opencpn:
     container_name: opencpn
     restart: unless-stopped
-    image: opencpn/ubuntu-bionic-armhf:latest
+    image: dmaurin/opencpnarmbian:latest
     ports:
       - "10110:10110"
       - "9009:9009"
